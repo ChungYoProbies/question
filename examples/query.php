@@ -25,7 +25,7 @@ var_dump($db->delete($sql));
 function initDatabaseIfNeeded($db)
 {
     $sql = "
-        CREATE TABLE IF NOT EXISTSDatabase `Bar` ( 
+        CREATE TABLE IF NOT EXISTS `Bar` ( 
             `id` INT NOT NULL AUTO_INCREMENT 
             , `note` VARCHAR(255) NOT NULL 
             , PRIMARY KEY (`id`) 
